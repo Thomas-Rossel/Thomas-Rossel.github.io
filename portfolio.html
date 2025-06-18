@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Carga de iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación fija -->
+    <nav>
+        <div class="logo">Mi Portfolio</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Sección de presentación personal -->
+        <section id="inicio" style="padding-top: 5rem">
+            <h1 class="mostrar_nombre">Thomas Fernandez Rossel</h1>
+            <p class="mostrar_nombre" style="margin-top: -5rem; font-size: 40px;">Estudiante de programación y futuro ingeniero</p>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="curriculum.pdf" target="_blank" class="cv-button">
+                    <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
+                    Descargar CV <br>
+                    (a modo ilustrativo)
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección sobre mí -->
+        <section class="sobre_mi" id="sobre-mi">
+            <div class="texto-sobre-mi">
+                <p>Soy un actual estudiante de cuarto de informatica en el instituto Huergo, apasionado por el mundo de la programación. Con más de 3 años de experiencia en la utilizacion de Python, aunque me especializo en la creacion de codigos funcionales, tambien sostengo un interes muy fuerte por la parte fisica de la computadora.<br>Aqui yacen algunos de los programas de los cuales poseo conocimiento, estoy aprendiendo, o tengo en mente para un futuro.</p>
+            </div>
+
+            <!-- Habilidades mostradas en forma de grilla -->
+            <div class="skills-grid">
+                <div class="skill-item"><h3>Python</h3></div>
+                <div class="skill-item"><h3>JSON</h3></div>
+                <div class="skill-item"><h3>TKinter</h3></div>
+                <div class="skill-item"><h3>CSS</h3></div>
+                <div class="skill-item"><h3>HTML</h3></div>
+                <div class="skill-item"><h3>C++</h3></div>
+            </div>
+        </section>
+
+        <!-- Sección de proyectos realizados -->
+        <section class="mis_proyectos" id="proyectos">
+            <div class="cuadraditos">
+                <div class="emoji_cuadrado"><h1>Space-Invaders</h1></div>
+                <div class="texto_cuadrado"><h1>Como proyecto de cuarto año en computacion, tuve que llevar a cabo nuestro propio Space-Invaders.</h1></div> 
+            </div>
+
+            <div class="cuadraditos">
+                <div class="emoji_cuadrado"><h1>Mortal Kombat</h1></div>
+                <div class="texto_cuadrado"><h1>Aprovechando mi tiempo libre me di el gusto de expermientar con mis habilidades en Python y desarrolle un juego similar al Mortal Kombat.</h1></div> 
+            </div>
+
+            <div class="cuadraditos">
+                <div class="emoji_cuadrado"><h1>Mi Portfolio</h1></div>
+                <div class="texto_cuadrado"><h1>Tambien uno de mis proyectos es mi propio Portfolio, el cual es el que estas viendo justo ahora. Es un sitio donde aclaro mis habilidades y metas.</h1></div> 
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="contacto" id="contacto">
+            <h2>Contactate conmigo si tenes alguna idea de proyecto...</h2>
+
+            <!-- Inputs de nombre y apellido -->
+            <div class="conteiner">
+                <input type="text" id="nombre" class="entrada-facherita" placeholder="Escribí tu nombre">
+                <input type="text" id="apellido" class="entrada-facherita" placeholder="Escribí tu apellido">
+            </div>
+
+            <!-- Input de mensaje -->
+            <div class="conteiner">
+                <input type="text" id="mensaje" class="mensaje-facherito" placeholder="Escribí tu mensaje">
+            </div>
+
+            <!-- Input de email + botón de enviar -->
+            <div class="conteiner">
+                <input type="text" id="email" class="mensaje-facherito" style="padding: 12px 20px; width: 70%;" placeholder="Escribí tu mail">
+                <button class="mensaje-facherito" style="padding: 12px 20px; width: 30%;" onclick="enviar()">Enviar</button>
+
+                <!-- Función para limpiar el formulario -->
+                <script>
+                    function enviar() {
+                        document.getElementById("nombre").value = "";
+                        document.getElementById("apellido").value = "";
+                        document.getElementById("mensaje").value = "";
+                        document.getElementById("email").value = "";
+                    }
+                </script>
+            </div>
+        </section>
+
+        <!-- Pie de página con links sociales -->
+        <footer>
+            <p>@2025 Thomas Fernandez Rossel. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/thomasss.fr" target="_blank" class="social-link">
+                    <i class="fab fa-instagram" style="font-size: 30px; color: #C13584;"></i>
+                </a>
+                <a href="https://github.com/Thomas-Rossel" target="_blank" class="social-link">
+                    <i class="fab fa-github" style="font-size: 30px; color: black;"></i>
+                </a>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
